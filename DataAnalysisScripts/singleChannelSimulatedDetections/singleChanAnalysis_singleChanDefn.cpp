@@ -22,8 +22,8 @@ typedef std::chrono::high_resolution_clock Clock;
 #define BOOTSTRAPS 1000
 
 //canonical start and end times
-#define RIPPLESTARTBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsStartTwoChan.out"
-#define RIPPLEENDBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsEndTwoChan.out"
+#define RIPPLESTARTBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsStart.out"
+#define RIPPLEENDBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsEnd.out"
 
 //output files *threshold extentions added within analysis code
 #define SIMDETECTIONFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/simDetectionsSingleChan"
@@ -239,6 +239,8 @@ void* real_work_thread(void *arg)
         //instantiate true/false positive counters
         int trueDetections = 0;
         int falseDetections = 0;
+        //instantiate true negative counter
+        int totalTrueNegatives = 0;
 
         // auto timeSection = Clock().now();
 
@@ -291,6 +293,7 @@ void* real_work_thread(void *arg)
             }
             //else determine if detection is present for false detection
             else if(rippleBoundSample == -1){
+                ++totalTrueNegatives;
                 //loop through all simulated detection time indices
                 for(unsigned int xx=0; xx<detectionTimeIndexes.size(); ++xx){
                     //if detection is present within random sample bound
@@ -310,7 +313,7 @@ void* real_work_thread(void *arg)
         */
         //write above metrics to appropriate files.
         fileHandlers.tpRate << (double)trueDetections/totalRipples << '\n';
-        fileHandlers.fpRate << falseDetections/20.0<< '\n';
+        fileHandlers.fpRate << (double)falseDetections/(totalTrueNegatives*15/60000)<< '\n';
         fileHandlers.detectionLatency << calcMean(detectionlatency)<< '\n';
         fileHandlers.relativeDetectionLatency << calcMean(relativedetectionlatency)<< '\n';
         fileHandlers.tpRate.flush();fileHandlers.fpRate.flush();fileHandlers.detectionLatency.flush();fileHandlers.relativeDetectionLatency.flush();

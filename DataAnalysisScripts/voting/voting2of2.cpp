@@ -308,7 +308,8 @@ void* real_work_thread(void *arg)
         //instantiate true/false positive counters
         int trueDetections = 0;
         int falseDetections = 0;
-
+        //instantiate true negative counter
+        int totalTrueNegatives = 0;
         // auto timeSection = Clock().now();
 
         //Generate 80k bootstrap samples 15 ms in length (80k * 15 ms = 20 min)
@@ -360,6 +361,7 @@ void* real_work_thread(void *arg)
             }
             //else determine if detection is present for false detection
             else if(rippleBoundSample == -1){
+                ++totalTrueNegatives;
                 //loop through all simulated detection time indices
                 for(unsigned int xx=0; xx<detectionTimeIndexes.size(); ++xx){
                     //if detection is present within random sample bound
@@ -379,7 +381,7 @@ void* real_work_thread(void *arg)
         */
         //write above metrics to appropriate files.
         fileHandlers.tpRate << (double)trueDetections/totalRipples << '\n';
-        fileHandlers.fpRate << falseDetections/20.0<< '\n';
+        fileHandlers.fpRate << (double)falseDetections/(totalTrueNegatives*15/60000)<< '\n';
         fileHandlers.detectionLatency << calcMean(detectionlatency)<< '\n';
         fileHandlers.relativeDetectionLatency << calcMean(relativedetectionlatency)<< '\n';
         fileHandlers.tpRate.flush();fileHandlers.fpRate.flush();fileHandlers.detectionLatency.flush();fileHandlers.relativeDetectionLatency.flush();
