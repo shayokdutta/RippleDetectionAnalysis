@@ -220,8 +220,20 @@ void* real_work_thread(void *arg)
     fileHandlers.relativeDetectionLatency.open(fileNameee, std::ofstream::out | std::ofstream::trunc);
 
 
-    //Generate 1000 20 minute sample metric quantifications
+    //Generate 1000 full dataset sample metric quantifications
+    /**
+     * NOTE: THIS IS NOT GOING TO BE OPTIMIZED I'M SIMPLY MODIFYING THE 20 MIN
+     * CHUNK VERSION TO FULL DATASET AND LEAVING THIS RUNNING WHILE I DO OTHER
+     * STUFF (e.g., eat lunch, get my microdrive ready)
+     */
+    //chunk data
+    std::vector<int> bootstrapsampleStartTimes;
     unsigned int myCounter = 0;
+    while(myCounter < smoothed_envelopeT2.size()){
+        bootstrapsampleStartTimes.push_back(myCounter);
+        myCounter+=45;//take every 45th sample so every 15ms...this is binning
+    }
+    myCounter = 0;
     auto t1 = Clock::now();
     while(myCounter < BOOTSTRAPS){
         ++myCounter;
@@ -243,11 +255,11 @@ void* real_work_thread(void *arg)
         int totalTrueNegatives=0;
         // auto timeSection = Clock().now();
 
-        //Generate 80k bootstrap samples 15 ms in length (80k * 15 ms = 20 min)
-        for(unsigned int iii=0; iii<80000; ++iii){
+        //Generate full dataset bootstrap samples
+        for(unsigned int iii=0; iii<bootstrapsampleStartTimes.size(); ++iii){
             //generate random integer from 0 to size of data
-            int bootstrapsample = std::rand() % (smoothed_envelopeT2.size()-45); //45 is length of 15 ms window in time indices
-
+            int bootstrapsample = bootstrapsampleStartTimes[std::rand() % (bootstrapsampleStartTimes.size())];
+            
             /** Determine if sample is a canonical ripple
              * tail of 15 ms chunk has ripple bound start
              * 15 ms chunk is within ripple bound start and end
