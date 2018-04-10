@@ -8,4 +8,4 @@ Nelpy<br>
 Trodes<br>
 [Trodes + RippleDetection Module Software](https://bitbucket.org/mkarlsso/trodes/branch/rippleDetectionBeagleBoneStimModule)
 <br><br>
-Posters and ther links can be found on [sd54.web.rice.edu](http://sd54.web.rice.edu/research/).
+Posters and other links can be found on [sd54.web.rice.edu](http://sd54.web.rice.edu/research/).
