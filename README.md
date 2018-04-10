@@ -1,7 +1,11 @@
 # Ripple detection with Trodes analysis and evaluation code
 
-Note: `nelpy` is widely used during this analysis. However, the version of `nelpy` used is a modified one. See links below
+Note: `nelpy` is widely used during this analysis. However, the version of `nelpy` used is a modified one. See links below:<br><br>
+Nelpy<br>
 [Nelpy used for analysis](https://github.com/shayokdutta/nelpy_modified)<br>
 [Nelpy Github](https://github.com/nelpy)
 <br><br>
+Trodes<br>
 [Trodes + RippleDetection Module Software](https://bitbucket.org/mkarlsso/trodes/branch/rippleDetectionBeagleBoneStimModule)
+<br><br>
+Posters and ther links can be found on sd54.web.rice.edu/research/
