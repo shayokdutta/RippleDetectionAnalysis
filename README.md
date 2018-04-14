@@ -3,10 +3,10 @@
 Note: `nelpy` is widely used during this analysis. However, the version of `nelpy` used is a modified one. See links below:<br><br>
 Nelpy<br>
 [Nelpy used for analysis](https://github.com/shayokdutta/nelpy_modified)<br>
-[Nelpy Github](https://github.com/nelpy)
+[Nelpy github](https://github.com/nelpy)
 <br><br>
 Trodes<br>
-[Trodes + RippleDetection Module Software](https://bitbucket.org/mkarlsso/trodes/branch/rippleDetectionBeagleBoneStimModule)
+[Trodes + RippleDetection module software](https://bitbucket.org/mkarlsso/trodes/branch/rippleDetectionBeagleBoneStimModule)
 <br><br>
 Paper<br>
 [bioRxiv preprint](https://www.biorxiv.org/content/early/2018/04/11/298661)
