@@ -6,7 +6,8 @@ Nelpy<br>
 [Nelpy github](https://github.com/nelpy)
 <br><br>
 Trodes<br>
-[Trodes + RippleDetection module software](https://bitbucket.org/mkarlsso/trodes/branch/rippleDetectionBeagleBoneStimModule)
+[Trodes + RippleDetection module software](https://bitbucket.org/mkarlsso/trodes/branch/rippleDetectionBeagleBoneStimModule)<br>
+[How to use Trodes + RippleDetection module](https://docs.google.com/document/d/1cZG8eLavlUdqzHJkOljiraBl5P1K1ZV-zJhWvluX0Tg/edit?usp=sharing)
 <br><br>
 Paper<br>
 [bioRxiv preprint](https://www.biorxiv.org/content/early/2018/04/11/298661)
