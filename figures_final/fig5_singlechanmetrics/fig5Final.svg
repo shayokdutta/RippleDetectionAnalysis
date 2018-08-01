@@ -13,7 +13,7 @@
    viewbox="0 0 6.25in 3.67in"
    height="3.67in"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="fig5Final.svg">
   <metadata
      id="metadata2314">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -586,17 +586,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1855"
-     inkscape:window-height="1176"
+     inkscape:window-width="1920"
+     inkscape:window-height="1145"
      id="namedview2310"
      showgrid="false"
-     inkscape:zoom="22.627417"
-     inkscape:cx="387.85969"
-     inkscape:cy="103.65399"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:zoom="1"
+     inkscape:cx="-82.609778"
+     inkscape:cy="140.72186"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g13014"
+     inkscape:current-layer="g280"
      showguides="false" />
   <g
      id="g4">
@@ -702,7 +702,7 @@
          id="text313"
          y="124.40781"
          x="29.699999"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">2</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">2</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -716,7 +716,7 @@
          id="text325"
          y="124.40781"
          x="66.900002"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">4</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">4</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -730,7 +730,7 @@
          id="text337"
          y="124.40781"
          x="104.1"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">6</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">6</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -750,7 +750,7 @@
          width="100%"
          height="100%" />
       <text
-         style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="64.574997"
          y="136.33092"
          id="text360">Threshold (z-units)</text>
@@ -767,7 +767,7 @@
          id="text377"
          y="108.67984"
          x="8.7500019"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -781,7 +781,7 @@
          id="text389"
          y="67.126648"
          x="8.7500019"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">40</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">40</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -795,7 +795,7 @@
          id="text401"
          y="25.573452"
          x="8.7500019"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">80</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">80</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -860,11 +860,11 @@
          width="100%"
          height="100%" />
       <text
-         style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
-         transform="matrix(0,-1,1,0,0,0)"
+         style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         transform="rotate(-90)"
          x="-61.424999"
          y="-6.0975018"
-         id="text464">FPR (per min)</text>
+         id="text464">FSR (per min)</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;fill-opacity:0.2;stroke:#1a1a1a;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000;stroke-opacity:0.2"
@@ -926,7 +926,7 @@
          id="text517"
          y="68.877815"
          x="62.669472"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">3</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">3</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -940,7 +940,7 @@
          id="text529"
          y="68.877815"
          x="76.311577"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">4</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">4</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -954,7 +954,7 @@
          id="text541"
          y="68.877815"
          x="89.953682"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">5</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">5</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -968,7 +968,7 @@
          id="text553"
          y="68.877815"
          x="103.59579"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">6</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">6</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -1018,7 +1018,7 @@
          id="text598"
          y="55.171822"
          x="48.119995"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -1032,7 +1032,7 @@
          id="text609"
          y="33.838486"
          x="48.119995"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">20</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">20</text>
       <use
          transform="translate(0,-3.133545e-6)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -1093,7 +1093,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-111.30001"
          y="124.40781"
          id="text31">2</text>
@@ -1107,7 +1107,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-74.099998"
          y="124.40781"
          id="text40">4</text>
@@ -1121,7 +1121,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-36.900002"
          y="124.40781"
          id="text49">6</text>
@@ -1147,7 +1147,7 @@
          id="text67"
          y="136.33092"
          x="-76.425003"
-         style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">Threshold (z-units)</text>
+         style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">Threshold (z-units)</text>
       <use
          height="100%"
          width="100%"
@@ -1158,7 +1158,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-132.25"
          y="112.83516"
          id="text80">75</text>
@@ -1172,7 +1172,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-132.25"
          y="25.647652"
          id="text89">100</text>
@@ -1216,8 +1216,8 @@
          id="text119"
          y="-152.65843"
          x="-61.425003"
-         transform="matrix(0,-1,1,0,0,0)"
-         style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">TPR (%)</text>
+         transform="rotate(-90)"
+         style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">TPR (%)</text>
       <use
          height="100%"
          width="100%"
@@ -1276,7 +1276,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-103"
          y="108.56781"
          id="text159">2</text>
@@ -1290,7 +1290,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-85.720001"
          y="108.56781"
          id="text168">3</text>
@@ -1304,7 +1304,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-68.440002"
          y="108.56781"
          id="text177">4</text>
@@ -1318,7 +1318,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-51.160011"
          y="108.56781"
          id="text186">5</text>
@@ -1359,7 +1359,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-108"
          y="92.564377"
          id="text214">95</text>
@@ -1373,7 +1373,7 @@
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          transform="translate(-141,-3.133545e-6)" />
       <text
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="-108"
          y="70.410538"
          id="text223">100</text>
@@ -1504,11 +1504,10 @@
               <g
                  id="g690">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   x="29.7"
-                   y="124.4078125"
-                   id="text692"
-                   transform="rotate(-0.000000, 29.700000, 124.407813)">2</text>
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="29.700001"
+                   y="124.40781"
+                   id="text692">2</text>
               </g>
             </g>
             <g
@@ -1528,11 +1527,10 @@
               <g
                  id="g702">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   x="66.9"
-                   y="124.4078125"
-                   id="text704"
-                   transform="rotate(-0.000000, 66.900000, 124.407813)">4</text>
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="66.900002"
+                   y="124.40781"
+                   id="text704">4</text>
               </g>
             </g>
             <g
@@ -1552,11 +1550,10 @@
               <g
                  id="g714">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="104.1"
-                   y="124.4078125"
-                   id="text716"
-                   transform="rotate(-0.000000, 104.100000, 124.407813)">6</text>
+                   y="124.40781"
+                   id="text716">6</text>
               </g>
             </g>
             <g
@@ -1599,11 +1596,10 @@
             <g
                id="g737">
               <text
-                 style="fill:#262626;font-family:Arial;font-size:12.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                 x="64.575"
-                 y="136.3309375"
-                 id="text739"
-                 transform="rotate(-0.000000, 64.575000, 136.330938)">Threshold (z-units)</text>
+                 style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                 x="64.574997"
+                 y="136.33093"
+                 id="text739">Threshold (z-units)</text>
             </g>
           </g>
           <g
@@ -1632,11 +1628,10 @@
               <g
                  id="g754">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="112.83515625"
-                   id="text756"
-                   transform="rotate(-0.000000, 8.750000, 112.835156)">25</text>
+                   y="112.83516"
+                   id="text756">25</text>
               </g>
             </g>
             <g
@@ -1656,11 +1651,10 @@
               <g
                  id="g766">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="64.01015625"
-                   id="text768"
-                   transform="rotate(-0.000000, 8.750000, 64.010156)">50</text>
+                   y="64.010155"
+                   id="text768">50</text>
               </g>
             </g>
             <g
@@ -1680,11 +1674,10 @@
               <g
                  id="g778">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="15.18515625"
-                   id="text780"
-                   transform="rotate(-0.000000, 8.750000, 15.185156)">75</text>
+                   y="15.185156"
+                   id="text780">75</text>
               </g>
             </g>
             <g
@@ -1817,10 +1810,10 @@
             <g
                id="g849">
               <text
-                 style="fill:#262626;font-family:Arial;font-size:12.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                 transform="rotate(-90.000000, -6.097500, 61.425000)"
-                 x="-6.0975"
-                 y="61.425"
+                 style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                 transform="rotate(-90,-6.0975,61.425)"
+                 x="-6.0974998"
+                 y="61.424999"
                  id="text851">Detection latency (ms)</text>
             </g>
           </g>
@@ -1950,10 +1943,9 @@
               <g
                  id="g918">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   transform="rotate(-0.000000, 29.700000, 124.407813)"
-                   x="29.7"
-                   y="124.4078125"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="29.700001"
+                   y="124.40781"
                    id="text920">2</text>
               </g>
             </g>
@@ -1974,10 +1966,9 @@
               <g
                  id="g930">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   transform="rotate(-0.000000, 66.900000, 124.407813)"
-                   x="66.9"
-                   y="124.4078125"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="66.900002"
+                   y="124.40781"
                    id="text932">4</text>
               </g>
             </g>
@@ -1998,10 +1989,9 @@
               <g
                  id="g942">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   transform="rotate(-0.000000, 104.100000, 124.407813)"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="104.1"
-                   y="124.4078125"
+                   y="124.40781"
                    id="text944">6</text>
               </g>
             </g>
@@ -2045,10 +2035,9 @@
             <g
                id="g965">
               <text
-                 style="fill:#262626;font-family:Arial;font-size:12.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                 transform="rotate(-0.000000, 64.575000, 136.330938)"
-                 x="64.575"
-                 y="136.3309375"
+                 style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                 x="64.574997"
+                 y="136.33093"
                  id="text967">Threshold (z-units)</text>
             </g>
           </g>
@@ -2078,10 +2067,9 @@
               <g
                  id="g982">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
-                   transform="rotate(-0.000000, 8.750000, 112.835156)"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="112.83515625"
+                   y="112.83516"
                    id="text984">20</text>
               </g>
             </g>
@@ -2102,10 +2090,9 @@
               <g
                  id="g994">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
-                   transform="rotate(-0.000000, 8.750000, 73.775156)"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="73.77515625"
+                   y="73.775154"
                    id="text996">30</text>
               </g>
             </g>
@@ -2126,10 +2113,9 @@
               <g
                  id="g1006">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
-                   transform="rotate(-0.000000, 8.750000, 34.715156)"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="34.71515625"
+                   y="34.715157"
                    id="text1008">40</text>
               </g>
             </g>
@@ -2188,10 +2174,10 @@
             <g
                id="g1037">
               <text
-                 style="fill:#262626;font-family:Arial;font-size:12.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                 transform="rotate(-90.000000, -6.097500, 61.425000)"
-                 x="-6.0975"
-                 y="61.425"
+                 style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                 transform="rotate(-90,-6.0975,61.425)"
+                 x="-6.0974998"
+                 y="61.424999"
                  id="text1039">Relative latency (%)</text>
             </g>
           </g>
@@ -2319,7 +2305,7 @@
            x="15.75"
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="8.75"
            y="25.647655"
            id="text1232">100</text>
@@ -2327,8 +2313,8 @@
            id="text1271"
            y="-11.658438"
            x="-61.424999"
-           transform="matrix(0,-1,1,0,0,0)"
-           style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">TPR (%)</text>
+           transform="rotate(-90)"
+           style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">TPR (%)</text>
         <use
            height="100%"
            width="100%"
@@ -2382,7 +2368,7 @@
            id="rect12484"
            style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.99999994;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <text
-           style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="64.574997"
            y="136.33093"
            id="text12149">Detection latency (ms)</text>
@@ -2449,7 +2435,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            transform="translate(0,-3.133545e-6)" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="15.75"
            y="124.40781"
            id="text1108">25</text>
@@ -2463,7 +2449,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            transform="translate(0,-3.133545e-6)" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="64.574997"
            y="124.40781"
            id="text1120">50</text>
@@ -2531,7 +2517,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            transform="translate(0,-3.133545e-6)" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="8.75"
            y="112.83516"
            id="text1220">75</text>
@@ -2573,12 +2559,12 @@
            id="path1308"
            inkscape:connector-curvature="0" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="39.259987"
            y="107.93781"
            id="text1332">40</text>
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="65.18"
            y="107.93781"
            id="text1344">50</text>
@@ -2613,7 +2599,7 @@
            id="text12151"
            y="70.183342"
            x="34.259991"
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">100</text>
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">100</text>
         <use
            height="100%"
            width="100%"
@@ -2651,7 +2637,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            transform="translate(0,1.8664551e-6)" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="34.259991"
            y="96.365166"
            id="text1383">95</text>
@@ -2697,7 +2683,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            transform="translate(0,-3.1335449e-6)" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="113.4"
            y="124.40781"
            id="text1132">75</text>
@@ -2723,7 +2709,7 @@
            id="text12153"
            y="107.93781"
            x="91.099998"
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">60</text>
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">60</text>
         <path
            inkscape:connector-curvature="0"
            id="path1479"
@@ -2849,11 +2835,10 @@
               <g
                  id="g1932">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   x="19.9053191489"
-                   y="124.4078125"
-                   id="text1934"
-                   transform="rotate(-0.000000, 19.905319, 124.407813)">0</text>
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="19.905319"
+                   y="124.40781"
+                   id="text1934">0</text>
               </g>
             </g>
             <g
@@ -2873,11 +2858,10 @@
               <g
                  id="g1944">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   x="61.4585106383"
-                   y="124.4078125"
-                   id="text1946"
-                   transform="rotate(-0.000000, 61.458511, 124.407813)">40</text>
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="61.458511"
+                   y="124.40781"
+                   id="text1946">40</text>
               </g>
             </g>
             <g
@@ -2897,11 +2881,10 @@
               <g
                  id="g1956">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                   x="103.011702128"
-                   y="124.4078125"
-                   id="text1958"
-                   transform="rotate(-0.000000, 103.011702, 124.407813)">80</text>
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   x="103.0117"
+                   y="124.40781"
+                   id="text1958">80</text>
               </g>
             </g>
             <g
@@ -3019,7 +3002,7 @@
             <g
                id="g2019">
               <text
-                 style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                 style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                  x="64.574997"
                  y="136.33093"
                  id="text2021">FSR (per min)</text>
@@ -3051,11 +3034,10 @@
               <g
                  id="g2036">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="112.83515625"
-                   id="text2038"
-                   transform="rotate(-0.000000, 8.750000, 112.835156)">75</text>
+                   y="112.83516"
+                   id="text2038">75</text>
               </g>
             </g>
             <g
@@ -3075,11 +3057,10 @@
               <g
                  id="g2048">
                 <text
-                   style="fill:#262626;font-family:Arial;font-size:10.0px;font-style:normal;font-weight:400;text-anchor:end;"
+                   style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    x="8.75"
-                   y="25.64765625"
-                   id="text2050"
-                   transform="rotate(-0.000000, 8.750000, 25.647656)">100</text>
+                   y="25.647655"
+                   id="text2050">100</text>
               </g>
             </g>
             <g
@@ -3152,10 +3133,10 @@
             <g
                id="g2087">
               <text
-                 style="fill:#262626;font-family:Arial;font-size:12.0px;font-style:normal;font-weight:400;text-anchor:middle;"
-                 transform="rotate(-90.000000, -11.658437, 61.425000)"
-                 x="-11.6584375"
-                 y="61.425"
+                 style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                 transform="rotate(-90,-11.658437,61.425)"
+                 x="-11.658438"
+                 y="61.424999"
                  id="text2089">TPR (%)</text>
             </g>
           </g>
@@ -3256,7 +3237,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            clip-path="none" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="49.262856"
            y="107.93781"
            id="text2150">0</text>
@@ -3270,7 +3251,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            clip-path="none" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="86.291428"
            y="107.93781"
            id="text2162">20</text>
@@ -3320,7 +3301,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            clip-path="none" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="40.560001"
            y="96.365158"
            id="text2208">95</text>
@@ -3334,7 +3315,7 @@
            style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            clip-path="none" />
         <text
-           style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+           style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
            x="40.560001"
            y="70.183334"
            id="text2220">100</text>
@@ -3490,7 +3471,7 @@
          id="text1502"
          y="315.40781"
          x="323.75"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">25</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">25</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3504,7 +3485,7 @@
          id="text1514"
          y="315.40781"
          x="372.57501"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">50</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">50</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3518,7 +3499,7 @@
          id="text1526"
          y="315.40781"
          x="421.39999"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">75</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">75</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3592,7 +3573,7 @@
          width="100%"
          height="100%" />
       <text
-         style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
          x="372.57501"
          y="327.33093"
          id="text1597">Detection latency (ms)</text>
@@ -3609,7 +3590,7 @@
          id="text1614"
          y="299.67984"
          x="316.75"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3623,12 +3604,12 @@
          id="text1626"
          y="258.12665"
          x="316.75"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">40</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">40</text>
       <text
          id="text1638"
          y="216.57346"
          x="316.75"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">80</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">80</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3684,8 +3665,8 @@
          width="100%"
          height="100%" />
       <text
-         style="font-style:normal;font-weight:400;font-size:12px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
-         transform="matrix(0,-1,1,0,0,0)"
+         style="font-style:normal;font-weight:400;font-size:12px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+         transform="rotate(-90)"
          x="-252.425"
          y="301.9025"
          id="text1701">FSR (per min)</text>
@@ -3760,7 +3741,7 @@
          id="text1762"
          y="257.35782"
          x="359.85999"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">40</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">40</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3774,7 +3755,7 @@
          id="text1774"
          y="257.35782"
          x="385.78"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">50</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">50</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3788,7 +3769,7 @@
          id="text1786"
          y="257.35782"
          x="411.70001"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">60</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">60</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3820,7 +3801,7 @@
          id="text1816"
          y="243.86516"
          x="354.85999"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">0</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3834,7 +3815,7 @@
          id="text1828"
          y="224.66516"
          x="354.85999"
-         style="font-style:normal;font-weight:400;font-size:10px;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">20</text>
+         style="font-style:normal;font-weight:400;font-size:10px;line-height:0%;font-family:Arial;text-anchor:end;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">20</text>
       <use
          transform="translate(308,191)"
          style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
@@ -3923,67 +3904,60 @@
   <g
      id="g2294">
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="1"
        y="10"
-       id="text2296">A</text>
+       id="text2296"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">A</text>
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="141"
        y="10"
-       id="text2298">B</text>
+       id="text2298"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">B</text>
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="281"
        y="10"
-       id="text2300">C</text>
+       id="text2300"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">C</text>
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="421"
        y="10"
-       id="text2302">D</text>
+       id="text2302"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">D</text>
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="1"
        y="175"
-       id="text2304">E</text>
+       id="text2304"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">E</text>
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="141"
        y="175"
-       id="text2306">F</text>
+       id="text2306"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">F</text>
     <text
-       font-family="Verdana"
        font-size="13"
        font-weight="bold"
        letter-spacing="0"
-       text-anchor="start"
        x="281"
        y="175"
-       id="text2308">G</text>
+       id="text2308"
+       style="font-weight:bold;font-size:13px;line-height:0%;font-family:Verdana;letter-spacing:0;text-anchor:start;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">G</text>
   </g>
 </svg>
