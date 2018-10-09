@@ -12,26 +12,26 @@
 typedef std::chrono::high_resolution_clock Clock;
 
 #define THRESHOLDSTART 1.5
-#define THRESHOLDEND 6.25
+#define THRESHOLDEND 10.25
 #define THRESHOLDSET false
 #define THRESHOLDT2 362
 
 //perform simulated real-time ripple detection on this file
-#define DATAINT2FILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/smoothed_envelope_simulated.out"
+#define DATAINT2FILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/smoothed_envelope_simulated.out"
 
 #define BOOTSTRAPS 1000
 
 //canonical start and end times
-#define RIPPLESTARTBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsStartTwoChan.out"
-#define RIPPLEENDBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsEndTwoChan.out"
+#define RIPPLESTARTBOUND "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsStartTwoChan5SD.out"
+#define RIPPLEENDBOUND "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsEndTwoChan5SD.out"
 
 //output files *threshold extentions added within analysis code
-#define SIMDETECTIONFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/simDetectionsSingleChan"
-#define TPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/tpRate"
-#define FPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/fpRate"
-#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/fpPercent"
-#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/detectionLatency"
-#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/relativeDetectionLatency"
+#define SIMDETECTIONFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/twoChanDefn5SD/simDetectionsSingleChan"
+#define TPRATEFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/twoChanDefn5SD/tpRate"
+#define FPRATEFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/twoChanDefn5SD/fpRate"
+#define FPPERCENTAGEFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/twoChanDefn5SD/fpPercent"
+#define DETECTIONLATENCYFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/twoChanDefn5SD/detectionLatency"
+#define RELATIVEDETECTIONLATENCYFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/twoChanDefn5SD/relativeDetectionLatency"
 
 double calcMean(std::vector<double> arrrayForEst)
 {
@@ -88,7 +88,7 @@ void* real_work_thread(void *arg)
         pthread_exit(0);
     }
     fileHandlers.startBounds.close();
-
+    
     fileHandlers.endBounds.open(RIPPLEENDBOUND);
     std::vector <int> rippleBoundEnd;
     if(fileHandlers.endBounds.is_open()){
@@ -101,7 +101,7 @@ void* real_work_thread(void *arg)
         pthread_exit(0);
     }
     fileHandlers.endBounds.close();
-
+    
     fileHandlers.dataInT2.open(DATAINT2FILENAME);
     std::vector <double> smoothed_envelopeT2;
     if(fileHandlers.dataInT2.is_open()){
@@ -132,9 +132,7 @@ void* real_work_thread(void *arg)
             thresholdT2 = THRESHOLDT2;
         else
             thresholdT2 = calcMean(smoothed_envelopeT2)+(x*calcSTD(smoothed_envelopeT2));
-
     
-
     //Hunt for ripples 
     unsigned int i=0;
     while (i<smoothed_envelopeT2.size()){ //loop through all elements of channel
@@ -148,7 +146,7 @@ void* real_work_thread(void *arg)
             ++i;
         }
     }
-
+    
     //track which detections detect canonical ripples
     std::vector<std::string> rippleDetected;
 
@@ -157,7 +155,7 @@ void* real_work_thread(void *arg)
     }
     unsigned int yyy = 0;
     unsigned int iiiii = 0;
-    while(iiiii<detectionTimeIndexes.size()){
+    while(iiiii<detectionTimeIndexes.size() && yyy < rippleBoundStart.size()){
         //if pre detect!
         if(detectionTimeIndexes[iiiii]<rippleBoundStart[yyy]){
             //don't double penalize for both false detection and missed detection

@@ -11,8 +11,8 @@
 #include <chrono>
 typedef std::chrono::high_resolution_clock Clock;
 
-#define THRESHOLDSTART 1.5
-#define THRESHOLDEND 6.25
+#define THRESHOLDSTART 6.25
+#define THRESHOLDEND 10.25
 #define THRESHOLDSET false
 #define THRESHOLDT2 362
 
@@ -22,16 +22,16 @@ typedef std::chrono::high_resolution_clock Clock;
 #define BOOTSTRAPS 1000
 
 //canonical start and end times
-#define RIPPLESTARTBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsStart.out"
-#define RIPPLEENDBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsEnd.out"
+#define RIPPLESTARTBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsStart3SD.out"
+#define RIPPLEENDBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/singleChanAnalysis/rippleBoundsEnd3SD.out"
 
 //output files *threshold extentions added within analysis code
-#define SIMDETECTIONFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/simDetectionsSingleChan"
-#define TPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/tpRate"
-#define FPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/fpRate"
-#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/fpPercent"
-#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/detectionLatency"
-#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn/relativeDetectionLatency"
+#define SIMDETECTIONFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn3SD/simDetectionsSingleChan"
+#define TPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn3SD/tpRate"
+#define FPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn3SD/fpRate"
+#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn3SD/fpPercent"
+#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn3SD/detectionLatency"
+#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/singleChan/singleChanDefn3SD/relativeDetectionLatency"
 
 double calcMean(std::vector<double> arrrayForEst)
 {
@@ -152,12 +152,13 @@ void* real_work_thread(void *arg)
     //track which detections detect canonical ripples
     std::vector<std::string> rippleDetected;
 
+    //all detections initially marked as not been detected
     for(unsigned int xx = 0; xx<rippleBoundStart.size(); ++xx){
         rippleDetected.push_back("F");
     }
     unsigned int yyy = 0;
     unsigned int iiiii = 0;
-    while(iiiii<detectionTimeIndexes.size()){
+    while(iiiii<detectionTimeIndexes.size() && yyy < rippleBoundStart.size()){
         //if pre detect!
         if(detectionTimeIndexes[iiiii]<rippleBoundStart[yyy]){
             //don't double penalize for both false detection and missed detection

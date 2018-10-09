@@ -11,7 +11,7 @@
 typedef std::chrono::high_resolution_clock Clock;
 
 #define THRESHOLDSTART 1.5 //for evaluating thresholds I did 1.5 to 6
-#define THRESHOLDEND 6.25
+#define THRESHOLDEND 10.25
 
 //from previous code for evaluations DO NOT REMOVE though
 #define THRESHOLDSET false
@@ -22,24 +22,18 @@ typedef std::chrono::high_resolution_clock Clock;
 
 #define GENERATE_CANONICAL_RIPPLES false
 
-#define DATAINT2FILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/smoothed_envelope_simulatedT2.out"
-#define DATAINT3FILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/smoothed_envelope_simulatedT3.out"
-#define DATAINT4FILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/smoothed_envelope_simulatedT4.out"
+#define DATAINT2FILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/smoothed_envelope_simulatedT2.out"
+#define DATAINT3FILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/smoothed_envelope_simulatedT3.out"
 
-#define RIPPLESTARTBOUNDT2 "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsStartT2.out"
-#define RIPPLESTARTBOUNDT3 "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsStartT3.out"
-#define RIPPLEENDBOUNDT2 "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsEndT2.out"
-#define RIPPLEENDBOUNDT3 "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsEndT3.out"
+#define RIPPLESTARTBOUND "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsStartTwoChan5SD.out"
+#define RIPPLEENDBOUND "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsEndTwoChan5SD.out"
 
-#define RIPPLESTARTBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsStartTwoChan.out"
-#define RIPPLEENDBOUND "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/twoChanAnalysis/rippleBoundsEndTwoChan.out"
-
-#define SIMDETECTIONFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/simDetectionsTwoChan"
-#define TPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/tpRate"
-#define FPRATEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/fpRate"
-#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/fpPercent"
-#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/detectionLatency"
-#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/relativeDetectionLatency"
+#define SIMDETECTIONFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/5SD/simDetectionsTwoChan"
+#define TPRATEFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/5SD/tpRate"
+#define FPRATEFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/5SD/fpRate"
+#define FPPERCENTAGEFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/5SD/fpPercent"
+#define DETECTIONLATENCYFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/5SD/detectionLatency"
+#define RELATIVEDETECTIONLATENCYFILENAME "/home/ubuntu/Documents/Code/RippleDetectionAnalysis/Cavaradossi/paperData/offlineAnalysis/twoChan/5SD/relativeDetectionLatency"
 
 double calcMean(std::vector<double> arrrayForEst)
 {
@@ -148,7 +142,7 @@ void* real_work_thread(void *arg)
     
     std::string fileNameee = SIMDETECTIONFILENAME;
 
-    fileNameee += strs.str() + "out";
+    fileNameee += strs.str() + ".out";
     myfile.open(fileNameee, std::ofstream::out | std::ofstream::trunc);
 
     //Hunt for ripples on three channels. Two out of three must detect ripples for us to "stimulate"
@@ -158,7 +152,7 @@ void* real_work_thread(void *arg)
     int firstDetectionIndex = -1;
     bool rippleDetectedT2 = false;
     bool rippleDetectedT3 = false;
-    int i=0;
+    unsigned int i=0;
 
     while (i<smoothed_envelopeT2.size()){ //loop through all elements of channel
             //if we exceed time requirements reset all flags
@@ -404,119 +398,7 @@ void* real_work_thread(void *arg)
 }
 
 int main(int argc, char *argv[])
-{
-    //Read in ripple bound files and determine ripple bounds
-    std::string line;
-
-    std::ifstream startBounds(RIPPLESTARTBOUNDT2);
-    std::vector <int> rippleBoundStartT2;
-    if(startBounds.is_open()){
-        while(std::getline(startBounds,line)){
-            rippleBoundStartT2.push_back(std::stod(line));
-        }
-    }
-    else{
-        std::cout<< "Error opening file ripple bounds start"<<std::endl;
-        pthread_exit(0);
-    }
-
-    std::ifstream endBounds(RIPPLEENDBOUNDT2);
-    std::vector <int> rippleBoundEndT2;
-    if(endBounds.is_open()){
-        while(std::getline(endBounds,line)){
-            rippleBoundEndT2.push_back(std::stod(line));
-        }
-    }
-    else{
-        std::cout<< "Error opening file ripple bounds end"<<std::endl;
-        pthread_exit(0);
-    }
-
-    startBounds.close(); endBounds.close();
-
-    startBounds.open(RIPPLESTARTBOUNDT3);
-    std::vector <int> rippleBoundStartT3;
-    if(startBounds.is_open()){
-        while(std::getline(startBounds,line)){
-            rippleBoundStartT3.push_back(std::stod(line));
-        }
-    }
-    else{
-        std::cout<< "Error opening file ripple bounds start"<<std::endl;
-        pthread_exit(0);
-    }
-
-    endBounds.open(RIPPLEENDBOUNDT3);
-    std::vector <int> rippleBoundEndT3;
-    if(endBounds.is_open()){
-        while(std::getline(endBounds,line)){
-            rippleBoundEndT3.push_back(std::stod(line));
-        }
-    }
-    else{
-        std::cout<< "Error opening file ripple bounds end"<<std::endl;
-        pthread_exit(0);
-    }
-    startBounds.close();endBounds.close();
-
-    //generate canonical ripple bounds...defined in jupyter notebook!
-    if (GENERATE_CANONICAL_RIPPLES){
-        std::ofstream canonicalStartBounds;
-        std::ofstream canonicalEndBounds;
-
-        canonicalStartBounds.open(RIPPLESTARTBOUND, std::ofstream::out | std::ofstream::trunc);
-        canonicalEndBounds.open(RIPPLEENDBOUND, std::ofstream::out | std::ofstream::trunc);
-
-        std::vector<int> rippleBoundStart, rippleBoundEnd;
-
-        unsigned int xx = 0;
-        for(unsigned int zz = 0; zz<rippleBoundStartT2.size(); ++zz){
-            while(xx < rippleBoundStartT3.size()){
-                if(rippleBoundStartT3[xx] <= rippleBoundStartT2[zz]){
-                    //check if T2 detection is within T3
-                    if(rippleBoundStartT2[zz] < rippleBoundEndT3[xx]){
-                        rippleBoundStart.push_back(rippleBoundStartT3[xx]);
-                        if(rippleBoundEndT2[zz] > rippleBoundEndT3[xx]){
-                            rippleBoundEnd.push_back(rippleBoundEndT2[zz]);
-                            canonicalEndBounds << rippleBoundEndT2[zz] << '\n';
-                        }
-                        else{
-                            rippleBoundEnd.push_back(rippleBoundEndT3[xx]);
-                            canonicalEndBounds << rippleBoundEndT3[xx] << '\n';
-                        }
-                        canonicalStartBounds << rippleBoundStartT3[xx] << '\n';
-                        canonicalStartBounds.flush();canonicalEndBounds.flush();
-                        break;
-                    }//else let's iterate until T3 detections are caught up
-                    else{
-                        ++xx;
-                    }
-                }
-                else{
-                    //check if T3 detection is within T2
-                    if(rippleBoundStartT3[xx] < rippleBoundEndT2[zz]){
-                        rippleBoundStart.push_back(rippleBoundStartT2[zz]);
-                        if(rippleBoundEndT2[zz] > rippleBoundEndT3[xx]){
-                            rippleBoundEnd.push_back(rippleBoundEndT2[zz]);
-                            canonicalEndBounds << rippleBoundEndT2[zz] << '\n';
-                        }
-                        else{
-                            rippleBoundEnd.push_back(rippleBoundEndT3[xx]);
-                            canonicalEndBounds << rippleBoundEndT3[xx] << '\n';
-                        }
-                        canonicalStartBounds << rippleBoundStartT2[zz] <<'\n';
-                        canonicalStartBounds.flush();canonicalEndBounds.flush();
-                        break;
-                    }//else let the T2 detections catch up
-                    else{
-                        break;
-                    }
-                }
-            }
-        }
-        canonicalStartBounds.close();canonicalEndBounds.close();
-    }
-    
+{    
     std::vector<pthread_t> tids;
     for(double x = THRESHOLDSTART; x<THRESHOLDEND; x+=0.25){ //loop through a bunch of thresholds, perform ripple detections, and evaluate
         pthread_t tid;

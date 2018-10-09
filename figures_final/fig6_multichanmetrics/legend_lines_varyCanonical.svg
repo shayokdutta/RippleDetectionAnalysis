@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with matplotlib (http://matplotlib.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="112pt"
+   version="1.1"
+   viewBox="0 0 112 112"
+   width="112pt"
+   id="svg77"
+   sodipodi:docname="legend_lines_varyCanonical.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata81">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1213"
+     inkscape:window-height="996"
+     id="namedview79"
+     showgrid="false"
+     inkscape:zoom="3.1607143"
+     inkscape:cx="129.25355"
+     inkscape:cy="76.019802"
+     inkscape:window-x="1987"
+     inkscape:window-y="176"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg77" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2">
+*{stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000;}
+  </style>
+  </defs>
+  <defs
+     id="defs75">
+    <clipPath
+       id="p89a4b89a88">
+      <rect
+         height="97.65"
+         width="97.65"
+         x="7.200000000000001"
+         y="7.200000000000003"
+         id="rect72" />
+    </clipPath>
+  </defs>
+  <path
+     d="m 39.554,15.320003 h 12.8"
+     style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100000"
+     id="path30"
+     inkscape:connector-curvature="0" />
+  <text
+     style="font-style:normal;font-weight:400;font-size:6.39999962px;font-family:Arial;text-anchor:start;fill:#262626;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+     x="57.473999"
+     y="17.560003"
+     id="text34">3 z-unit ripples</text>
+  <path
+     d="m 39.554,24.373004 h 12.8"
+     style="fill:none;stroke:#800080;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100000"
+     id="path37"
+     inkscape:connector-curvature="0" />
+  <text
+     style="font-style:normal;font-weight:400;font-size:6.39999962px;font-family:Arial;text-anchor:start;fill:#262626;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+     x="57.473999"
+     y="26.613005"
+     id="text41">4 z-unit ripples</text>
+  <path
+     d="m 39.554,33.426004 h 12.8"
+     style="fill:none;stroke:#008000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100000"
+     id="path44"
+     inkscape:connector-curvature="0" />
+  <text
+     style="font-style:normal;font-weight:400;font-size:6.39999962px;font-family:Arial;text-anchor:start;fill:#262626;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+     x="57.473999"
+     y="35.666004"
+     id="text48">5 z-unit ripples</text>
+  <path
+     d="m 39.554,44.738004 h 12.8 v -4.48 h -12.8 z"
+     style="opacity:0.2;fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
+     id="path51"
+     inkscape:connector-curvature="0" />
+  <text
+     style="font-style:normal;font-weight:400;font-size:6.39999962px;font-family:Arial;text-anchor:start;fill:#262626;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+     x="57.473999"
+     y="44.738003"
+     id="text54">3 z-unit ripples</text>
+  <path
+     d="m 39.554,53.791004 h 12.8 v -4.48 h -12.8 z"
+     style="opacity:0.2;fill:#800080;stroke:#800080;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
+     id="path57"
+     inkscape:connector-curvature="0" />
+  <text
+     style="font-style:normal;font-weight:400;font-size:6.39999962px;font-family:Arial;text-anchor:start;fill:#262626;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+     x="57.473999"
+     y="53.791004"
+     id="text60">4 z-unit ripples</text>
+  <path
+     d="m 39.554,62.844004 h 12.8 v -4.48 h -12.8 z"
+     style="opacity:0.2;fill:#008000;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
+     id="path63"
+     inkscape:connector-curvature="0" />
+  <text
+     style="font-style:normal;font-weight:400;font-size:6.39999962px;font-family:Arial;text-anchor:start;fill:#262626;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+     x="57.473999"
+     y="62.844006"
+     id="text66">5 z-unit ripples</text>
+</svg>

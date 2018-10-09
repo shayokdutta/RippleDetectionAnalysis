@@ -16,7 +16,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="fig3Final.svg">
+   sodipodi:docname="fig3Final.svg"
+   inkscape:export-filename="/home/shayok/Documents/Code/RippleDetectionAnalysis/Cavaradossi/figures_final/fig3_synthdetections/fig3Final.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs4">
     <clipPath
@@ -107793,16 +107796,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3066667"
-     inkscape:cx="302.67857"
-     inkscape:cy="271.43878"
+     inkscape:zoom="1.8479058"
+     inkscape:cx="159.60824"
+     inkscape:cy="215.19288"
      inkscape:document-units="px"
-     inkscape:current-layer="g70727"
+     inkscape:current-layer="matplotlib.axis_2"
      showgrid="false"
      units="in"
-     inkscape:window-width="1280"
+     inkscape:window-width="1213"
      inkscape:window-height="996"
-     inkscape:window-x="1920"
+     inkscape:window-x="1987"
      inkscape:window-y="176"
      inkscape:window-maximized="1" />
   <metadata
@@ -120543,13 +120546,36 @@
                 </g>
                 <g
                    style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
-                   id="text_15">
+                   id="text_15"
+                   transform="translate(1.5)">
                   <text
                      style="font-style:normal;font-weight:400;font-size:9.60000038px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                      transform="rotate(-90,2.53075,72)"
                      x="2.53075"
                      y="72"
                      id="text207">Threshold (z-scored)</text>
+                </g>
+                <g
+                   id="g29429"
+                   style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   transform="translate(149.80867)">
+                  <text
+                     id="text29427"
+                     y="72"
+                     x="2.53075"
+                     transform="rotate(-90,2.53075,72)"
+                     style="font-style:normal;font-weight:400;font-size:9.60000038px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">Threshold (z-scored)</text>
+                </g>
+                <g
+                   transform="translate(298.24744)"
+                   style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   id="g29433">
+                  <text
+                     style="font-style:normal;font-weight:400;font-size:9.60000038px;line-height:0%;font-family:Arial;text-anchor:middle;fill:#262626;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                     transform="rotate(-90,2.53075,72)"
+                     x="2.53075"
+                     y="72"
+                     id="text29431">Threshold (z-scored)</text>
                 </g>
               </g>
               <use
@@ -127590,14 +127616,15 @@
               </g>
               <g
                  style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
-                 id="axes_2">
+                 id="axes_2"
+                 transform="translate(-1.5)">
                 <g
                    style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    id="patch_7">
                   <path
                      inkscape:connector-curvature="0"
                      clip-path="url(#p8c14b5f43b-3-3-3-3)"
-                     d="m 112.86,129.6 0,-0.45 0,-114.3 0,-0.45 5.76,0 0,0.45 0,114.3 0,0.45 z"
+                     d="M 112.86,129.6 V 129.15 14.85 14.4 h 5.76 v 0.45 114.3 0.45 z"
                      style="fill:#ffffff;stroke:#ffffff;stroke-width:0.01;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
                      id="path3727" />
                 </g>
@@ -127607,7 +127634,7 @@
                 <g
                    style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                    id="matplotlib.axis_4"
-                   transform="translate(-3.2,0)">
+                   transform="translate(-3.2)">
                   <g
                      style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                      id="ytick_8">
@@ -127877,7 +127904,7 @@
                        transform="rotate(-90,142.706,72)"
                        x="142.70599"
                        y="72"
-                       id="text3813">False positives (%)</text>
+                       id="text3813">False discovery rate (%)</text>
                   </g>
                 </g>
                 <image
@@ -127893,7 +127920,7 @@
                    id="patch_8">
                   <path
                      inkscape:connector-curvature="0"
-                     d="m 112.86,129.6 0,-0.45 0,-114.3 0,-0.45 5.76,0 0,0.45 0,114.3 0,0.45 -5.76,0 z"
+                     d="M 112.86,129.6 V 129.15 14.85 14.4 h 5.76 v 0.45 114.3 0.45 z"
                      style="fill:none;stroke:#262626;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
                      id="path3817" />
                 </g>
@@ -135578,7 +135605,7 @@
                     <g
                        style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                        id="matplotlib.axis_4-4"
-                       transform="translate(-3.2,0)">
+                       transform="translate(-4.7)">
                       <g
                          style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                          id="ytick_8-66">
@@ -135855,13 +135882,13 @@
                        style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
                        y="14.4"
                        xlink:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAgAAACgCAYAAAAxQC0IAAAABHNCSVQICAgIfAhkiAAAATpJREFUWIXdlVFuxDAIRAGPe7AetAftOnZvwEMiG62aX6M3wxgH//HvY8mnCM/OTZpQMEZ6bpK6EjGgYJJEtE3OtkmUYJPkoZAD3abSeTF5pOemGEAoSCABPLgDIcjDAzkU2qQuSCLQJEkYDYzPfGrlMzcho18QEwYUIKEg0c3hhja/KGqSMMyB2jRRm8ofJ+fwBAG7gJcjh7XHhEKS75e4gYCXhc+fCPCrlcE+uEHCx2wS2AN20c+hb5Ju8xxYKNsuImwgHCA8IHGM2vwfJlkCTL42/Kt37rFAWFRwHSJQQd9kIQckgIcCoZ8keOgTsM1fKuhL3GGyO1HY5m4H9UAOPDAvWChrQcHGqSaJAoEKyOR1dQn9Nlmib5IIe6XnpgEjpYCXo7GIAEMpEaEvwQRsk4LSgt39ASb/AHiWuM3oDBUcAAAAAElFTkSuQmCC"
-                       x="113.04"
+                       x="111.54"
                        width="5.7600002"
                        id="imagef793cd5299"
                        height="115.2" />
                     <path
                        inkscape:connector-curvature="0"
-                       d="m 112.86,129.6 0,-0.45 0,-114.3 0,-0.45 5.76,0 0,0.45 0,114.3 0,0.45 -5.76,0 z"
+                       d="M 111.36,129.6 V 129.15 14.85 14.4 h 5.76 v 0.45 114.3 0.45 z"
                        style="fill:none;stroke:#262626;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
                        id="path3817-6" />
                   </g>
@@ -143530,7 +143557,8 @@
                 </g>
                 <g
                    id="axes_2-02"
-                   style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">
+                   style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
+                   transform="translate(-1.5)">
                   <g
                      id="patch_7-3"
                      style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">
@@ -143538,7 +143566,7 @@
                        inkscape:connector-curvature="0"
                        id="path3727-5"
                        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.01;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
-                       d="m 112.86,129.6 0,-0.45 0,-114.3 0,-0.45 5.76,0 0,0.45 0,114.3 0,0.45 z"
+                       d="M 112.86,129.6 V 129.15 14.85 14.4 h 5.76 v 0.45 114.3 0.45 z"
                        clip-path="url(#pf03299f56f-3-3-3)" />
                   </g>
                   <g
@@ -143547,7 +143575,7 @@
                   <g
                      id="matplotlib.axis_4-3"
                      style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000"
-                     transform="translate(-3.2,0)">
+                     transform="translate(-3.2)">
                     <g
                        id="ytick_8-0"
                        style="stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100000">
@@ -143777,7 +143805,7 @@
                        inkscape:connector-curvature="0"
                        id="path3799"
                        style="fill:none;stroke:#262626;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:100000"
-                       d="m 112.86,129.6 0,-0.45 0,-114.3 0,-0.45 5.76,0 0,0.45 0,114.3 0,0.45 -5.76,0 z" />
+                       d="M 112.86,129.6 V 129.15 14.85 14.4 h 5.76 v 0.45 114.3 0.45 z" />
                   </g>
                 </g>
               </g>

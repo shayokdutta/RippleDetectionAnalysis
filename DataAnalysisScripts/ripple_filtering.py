@@ -54,9 +54,9 @@ def rippleBandFilterSimulated(lfp, time, FS, bpFilterTaps, lpFilterTaps):
     return smoothed_envelope, rippleData
 
 #Ripple band filtering and envelope
-def rippleBandFilter(lfp, time, FS):
+def rippleBandFilter(lfp, time, FS,*,numtaps=25):
     #Bandpass filter into ripple band
-    b = signal.firwin(25, [150/(FS/2), 250/(FS/2)], pass_zero=False)
+    b = signal.firwin(numtaps, [150/(FS/2), 250/(FS/2)], pass_zero=False)
     rippleData = signal.filtfilt(b,1,lfp)
     #Hilbert transform
     rippleEnvelope = np.absolute(signal.hilbert(rippleData))
