@@ -11,6 +11,7 @@ Trodes<br>
 [How to use Trodes + RippleDetection module](https://docs.google.com/document/d/1cZG8eLavlUdqzHJkOljiraBl5P1K1ZV-zJhWvluX0Tg/edit?usp=sharing)
 <br><br>
 Paper<br>
+[Journal of Neural Engineering](https://doi.org/10.1088/1741-2552/aae90e)<br>
 [bioRxiv preprint](https://www.biorxiv.org/content/early/2018/04/11/298661)
 <br><br>
 Posters and other links can be found on [sd54.web.rice.edu](http://sd54.web.rice.edu/research/).
