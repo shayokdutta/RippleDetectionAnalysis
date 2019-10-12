@@ -20,18 +20,19 @@ typedef std::chrono::high_resolution_clock Clock;
 #define DATAINT2FILENAME "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/t3c1_smoothed_envelope.out"
 
 #define BOOTSTRAPS 200
+#define TIMEREQ 10 //given in ms above thresshold we will sweep from 2 ms up to this number in increments of 2
 
 //canonical start and end times
 #define RIPPLESTARTBOUND "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/singleChanDefn/rippleBoundsStart4SD.out"
 #define RIPPLEENDBOUND "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/singleChanDefn/rippleBoundsEnd4SD.out"
 
 //output files *threshold extentions added within analysis code
-#define SIMDETECTIONFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/singleChanDefn/simDetectionsSingleChan"
-#define TPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/singleChanDefn/tpRate"
-#define FPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/singleChanDefn/fpRate"
-#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/singleChanDefn/fpPercent"
-#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/singleChanDefn/detectionLatency"
-#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/singleChanDefn/relativeDetectionLatency"
+#define SIMDETECTIONFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/temporalReq/simDetectionsSingleChan"
+#define TPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/temporalReq/tpRate"
+#define FPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/temporalReq/fpRate"
+#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/temporalReq/fpPercent"
+#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/temporalReq/detectionLatency"
+#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/temporalReq/relativeDetectionLatency"
 
 double calcMean(std::vector<double> arrrayForEst)
 {
@@ -67,11 +68,18 @@ struct filehandlers{
     std::ifstream dataInT2;
 };
 
+struct threadvars{
+    double x; // ripple detection threhold
+    double temporalRequirement_ms;
+};
+
 
 void* real_work_thread(void *arg)
 {
-    double x = *((double*) arg); //stores threshold
-    std::cout<<"Single Chan Detection Threshold " <<x<<" thread running!"<<'\n';
+    struct threadvars arg_vars = *((struct threadvars*) arg); //stores threshold
+    double x = arg_vars.x;
+    double temporalReqs_ms = arg_vars.temporalRequirement_ms;
+    std::cout<<"Single Chan Detection Threshold " <<x<< " with temporal req: " << temporalReqs_ms << " ms thread running!"<<'\n';
 
     //Read input files
     std::string line;
@@ -118,7 +126,7 @@ void* real_work_thread(void *arg)
     int blockLength = 600; //200ms block after detection or 600 indexes at sampling rate 3kHz
     //open output detection file
     std::ostringstream strs;
-    strs << x*100;
+    strs << x*100 << "_" << temporalReqs_ms;
     std::ofstream myfile;
     std::string fileNameee = SIMDETECTIONFILENAME;
     fileNameee += strs.str() + ".out";
@@ -139,10 +147,27 @@ void* real_work_thread(void *arg)
     unsigned int i=0;
     while (i<smoothed_envelopeT2.size()){ //loop through all elements of channel
         if(smoothed_envelopeT2[i] > thresholdT2){
-            myfile << i << " " << i+10 <<"\n";
-            myfile.flush();
-            detectionTimeIndexes.push_back(i);
-            i+=blockLength;
+            //check if we meet the temporal req
+            bool temporalReqMet = true;
+            uint sampleTemporalReq = uint(temporalReqs_ms * 3); //3 samples per ms
+            //loop through the number of samples for the temporal req and check that each sample is above threshold
+            for(uint temporalreqmetloop=0; temporalreqmetloop < sampleTemporalReq; ++temporalreqmetloop){
+                ++i;
+                //if one sample is less than the threshold we fail to meet the ripple criteria
+                if(smoothed_envelopeT2[i]<thresholdT2){ 
+                    temporalReqMet = false;
+                    break;
+                }
+            }
+            if(temporalReqMet){
+                myfile << i << " " << i+10 <<"\n";
+                myfile.flush();
+                detectionTimeIndexes.push_back(i);
+                i+=blockLength;
+            }
+            else{
+                ++i;
+            }
         }
         else{
             ++i;
@@ -239,7 +264,7 @@ void* real_work_thread(void *arg)
     while(myCounter < BOOTSTRAPS){
         ++myCounter;
         if(myCounter %10 == 0){
-            std::cout<<"Single Chan Detection Thread: " << x << ": Last 10 iterations time: " <<
+            std::cout<<"Single Chan Detection Thread: " << x <<" temporal req: " << temporalReqs_ms << ": Last 10 iterations time: " <<
             std::chrono::duration_cast<std::chrono::seconds>(Clock::now() - t1).count()
             <<" s" << ". Percent Complete : "<<(double)myCounter*100/BOOTSTRAPS<<"%"<<std::endl;
             t1 = Clock::now();
@@ -339,20 +364,25 @@ void* real_work_thread(void *arg)
 
 int main(int argc, char *argv[])
 {
-    std::vector<pthread_t> tids;
-    for(double x = THRESHOLDSTART; x<THRESHOLDEND; x+=0.25){ //loop through a bunch of thresholds, perform ripple detections, and evaluate
-        pthread_t tid;
-        pthread_attr_t attr;
-        pthread_attr_init(&attr);
-        pthread_create(&tid,&attr,real_work_thread,&x);
-        tids.push_back(tid);
-        sleep(1);
-    }
-    for(unsigned int x = 0; x<tids.size(); ++x){
-        int rc = pthread_join(tids[x],NULL);
-        if (rc) { fprintf(stderr, "failed to join thread #%lf - %s\n",
-                                (long)(x*0.25)+1.5, strerror(rc));
-               exit(EXIT_FAILURE);}
+    for(double currTempReq = 2; currTempReq<=TIMEREQ; currTempReq+=2){
+        std::vector<pthread_t> tids;
+        for(double x = THRESHOLDSTART; x<THRESHOLDEND; x+=0.25){ //loop through a bunch of thresholds, perform ripple detections, and evaluate
+            pthread_t tid;
+            pthread_attr_t attr;
+            pthread_attr_init(&attr);
+            struct threadvars variablesToSend;
+            variablesToSend.x=x;
+            variablesToSend.temporalRequirement_ms=currTempReq;
+            pthread_create(&tid,&attr,real_work_thread,&variablesToSend);
+            tids.push_back(tid);
+            sleep(1);
+        }
+        for(unsigned int x = 0; x<tids.size(); ++x){ //collect each thread
+            int rc = pthread_join(tids[x],NULL);
+            if (rc) { fprintf(stderr, "failed to join thread #%lf - %s\n",
+                                    (long)(x*0.25)+1.5, strerror(rc));
+                exit(EXIT_FAILURE);}
+        }
     }
     return 0;
 }

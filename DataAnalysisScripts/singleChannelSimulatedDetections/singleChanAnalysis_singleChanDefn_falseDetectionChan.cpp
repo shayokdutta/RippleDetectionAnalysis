@@ -19,33 +19,34 @@ typedef std::chrono::high_resolution_clock Clock;
 #define THRESHOLDT2 362
 
 //perform simulated real-time ripple detection on this file
-#define DATAINT2FILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisData/smoothed_envelope_simulated.out"
-#define DATAINFDFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisData/smoothed_envelope_simulated_fd.out"
+#define DATAINT2FILENAME "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/t3c1_smoothed_envelope.out"
+#define DATAINFDFILENAME "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/t5c2_smoothed_envelope_fdChan.out"
 
-#define BOOTSTRAPS 1000
+#define BOOTSTRAPS 200
 #define BUFFERWINDOW 2//in ms
 
 //canonical start and end times
-#define RIPPLESTARTBOUND "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisData/rippleBoundsStart3SD.out"
-#define RIPPLEENDBOUND "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisData/rippleBoundsEnd3SD.out"
+#define RIPPLESTARTBOUND "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/singleChanDefn/rippleBoundsStart4SD.out"
+#define RIPPLEENDBOUND "/media/shayok/3TBData/Data/ShayD-Experiments/Rodents/RatsDomino/9-17-19/dataForAnalysis/singleChanDefn/rippleBoundsEnd4SD.out"
 
 //without false detection files
 //output files *threshold extentions added within analysis code
-#define SIMDETECTIONFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/4ms/simDetectionsSingleChan"
-#define TPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/4ms/tpRate"
-#define FPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/4ms/fpRate"
-#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/4ms/fpPercent"
-#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/4ms/detectionLatency"
-#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/4ms/relativeDetectionLatency"
+#define SIMDETECTIONFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/4ms/simDetectionsSingleChan"
+#define TPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/4ms/tpRate"
+#define FPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/4ms/fpRate"
+#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/4ms/fpPercent"
+#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/4ms/detectionLatency"
+#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/4ms/relativeDetectionLatency"
+
 
 //false detection files
 //output files *threshold extentions added within analysis code
-// #define SIMDETECTIONFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/6ms/simDetectionsSingleChan"
-// #define TPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/6ms/tpRate"
-// #define FPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/6ms/fpRate"
-// #define FPPERCENTAGEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/6ms/fpPercent"
-// #define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/6ms/detectionLatency"
-// #define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/MSThesisResults/falseDetectionChan/6ms/relativeDetectionLatency"
+//#define SIMDETECTIONFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/6ms/simDetectionsSingleChan"
+//#define TPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/6ms/tpRate"
+//#define FPRATEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/6ms/fpRate"
+//#define FPPERCENTAGEFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/6ms/fpPercent"
+//#define DETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/6ms/detectionLatency"
+//#define RELATIVEDETECTIONLATENCYFILENAME "/home/shayok/Documents/Projects/RippleDetectionAnalysis/ArielSfNResults/singleChanAnalysis/falseDetectionChan/6ms/relativeDetectionLatency"
 
 
 double calcMean(std::vector<double> arrrayForEst)
